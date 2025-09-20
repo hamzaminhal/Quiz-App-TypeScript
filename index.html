@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="text-center">Quiz Application</h1>
+    <div class="container">
+      <div id="quiz-part">
+        <div id="question" class="question"></div>
+        <div id="timer"></div>
+        <div id="options"></div>
+
+        <div class="buttons text-center">
+          <button id="next-question" class="btn next-btn width" disabled>
+            Next Question
+          </button>
+          <button id="end-quiz" class="btn end-quiz display-none width">
+            End Quiz
+          </button>
+        </div>
+      </div>
+      <div class="result-part display-none" id="result-part">
+        <div id="score"></div>
+        <div id="msg"></div>
+        <button id="restart" class="btn btn-primary">Restart Quiz</button>
+      </div>
+    </div>
+
+    <script src="js-files/index.js"></script>
+  </body>
+</html>
